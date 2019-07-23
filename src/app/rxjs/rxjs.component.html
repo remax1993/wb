@@ -1,0 +1,24 @@
+<button mat-raised-button (click)="start()">Старт</button>
+<span class="sum">Сумма: {{sum}}</span>
+<div class="d-flex">
+  <div>
+    <span>Первый поток</span>
+    <ul>
+      <li *ngFor="let el of arr[0]">{{el.id}}</li>
+    </ul>
+  </div>
+
+  <div>
+    <span>Второй поток</span>
+    <ul>
+      <li *ngFor="let el of arr[1]">{{el.id}}</li>
+    </ul>
+  </div>
+
+  <div>
+    <span>Третий поток</span>
+    <ul>
+      <li *ngFor="let el of arr[2]">{{el.id}}</li>
+    </ul>
+  </div>
+</div>
